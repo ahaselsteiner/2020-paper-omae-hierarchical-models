@@ -1,0 +1,3 @@
+[submodule "exponentiated-weibull"]
+    path = matlab/exponentiated-weibull
+    url = https://github.com/ahaselsteiner/exponentiated-weibull.git
