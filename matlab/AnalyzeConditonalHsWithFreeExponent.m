@@ -1,6 +1,8 @@
-load datasets-provided-ABCDEF.mat
-
 DATASET_CHAR = 'F';
+BIN_WIDTH = 2;
+MIN_DATA_POINTS_IN_BIN = 200;
+
+load datasets-provided-ABCDEF.mat
 
 if DATASET_CHAR == 'D'
     v = D.V;
@@ -17,11 +19,7 @@ end
 pdV_ExpWbl = ExponentiatedWeibull();
 pdV_ExpWbl.fitDist(v, 'WLS')
 
-binWidth = 2;
-minDataPointsInBin = 200;
-nOfBins = ceil((max(v) / binWidth));
-
-
+nOfBins = ceil((max(v) / BIN_WIDTH));
 pdHs_Exp = ExponentiatedWeibull.empty(nOfBins, 0);
 xHat_Exp = cell(nOfBins, 1);
 xi = cell(nOfBins, 1);
@@ -37,14 +35,14 @@ stdOfHs = nan(nOfBins, 1);
 
 fig = figure('position', [100, 100, 1400, 350], 'renderer', 'Painters');
 for i = 1:nOfBins
-    lowerLimit(i) = (i - 1) * binWidth;
-    upperLimit(i) = i * binWidth;
+    lowerLimit(i) = (i - 1) * BIN_WIDTH;
+    upperLimit(i) = i * BIN_WIDTH;
     vIsInBin = (v > lowerLimit(i)) .* (v < upperLimit(i));
     hsInBin{i} = hs(logical(vIsInBin));
     
 
     
-    if length(hsInBin{i}) >= minDataPointsInBin
+    if length(hsInBin{i}) >= MIN_DATA_POINTS_IN_BIN
         xi{i} = sort(hsInBin{i});
         n = length(xi{i});
         j = [1:1:n]';
@@ -99,7 +97,7 @@ for i = 1:length(pdHs_Exp)
     alphas(i) = pdHs_Exp(i).Alpha;
     betas(i) = pdHs_Exp(i).Beta;
     deltas(i) = pdHs_Exp(i).Delta;
-    binCenter(i) = (i - 0.5) * binWidth;
+    binCenter(i) = (i - 0.5) * BIN_WIDTH;
 end
 
 

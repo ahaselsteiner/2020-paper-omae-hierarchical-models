@@ -1,14 +1,10 @@
-addpath('C:\Users\Andreas Haselsteiner\Documents\MATLAB\2019-paper-predicting-wave-heights\work-spaces');
-addpath('C:\Users\Andreas Haselsteiner\Documents\MATLAB\2019-paper-predicting-wave-heights\exponentiated-weibull');
-addpath('C:\Users\Andreas Haselsteiner\Documents\MATLAB\compute-hdc');
-load datasets-provided-ABCDEF.mat
+DATASET_CHAR = 'D';
 DELTA = 5;
-DATASET_CHAR = 'F';
+BIN_WIDTH = 2;
+MIN_DATA_POINTS_IN_BIN = 20;
 
 
-binWidth = 2;
-minDataPointsInBin = 20;
-
+load datasets-provided-ABCDEF.mat
 if DATASET_CHAR == 'D'
     v = D.V;
     hs = D.Hs;
@@ -19,6 +15,7 @@ elseif DATASET_CHAR == 'F'
     v = F.V;
     hs = F.Hs;
 end
+
 
 
 %Is it Weibull distributed or do we need a exponent? For dataset F: Yes
@@ -64,7 +61,7 @@ legend box off
 
 
 
-nOfBins = ceil((max(v) / binWidth));
+nOfBins = ceil((max(v) / BIN_WIDTH));
 
 pdHs_Exp = ExponentiatedWeibull.empty(nOfBins, 0);
 xi = cell(nOfBins, 1);
@@ -80,12 +77,12 @@ varOfHs = nan(nOfBins, 1);
 
 
 for i = 1:nOfBins
-    lowerLimit(i) = (i - 1) * binWidth;
-    upperLimit(i) = i * binWidth;
+    lowerLimit(i) = (i - 1) * BIN_WIDTH;
+    upperLimit(i) = i * BIN_WIDTH;
     vIsInBin = (v > lowerLimit(i)) .* (v <= upperLimit(i));
     hsInBin{i} = hs(logical(vIsInBin));
 
-    if length(hsInBin{i}) >= minDataPointsInBin
+    if length(hsInBin{i}) >= MIN_DATA_POINTS_IN_BIN
         xi{i} = sort(hsInBin{i});
         n = length(xi{i});
         j = [1:1:n]';
@@ -117,7 +114,7 @@ for i = 1:length(pdHs_Exp)
     alphas(i) = pdHs_Exp(i).Alpha;
     betas(i) = pdHs_Exp(i).Beta;
     deltas(i) = pdHs_Exp(i).Delta;
-    binCenter(i) = (i - 0.5) * binWidth;
+    binCenter(i) = (i - 0.5) * BIN_WIDTH;
 end
 
 figMarginalHsFits = figure('position', [100, 100, 1400, 400], 'renderer', 'Painters');
