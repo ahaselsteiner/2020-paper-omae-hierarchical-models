@@ -1,4 +1,4 @@
-DATASET_CHAR = 'F';
+DATASET_CHAR = 'D';
 BIN_WIDTH = 2;
 MIN_DATA_POINTS_IN_BIN = 200;
 
@@ -115,7 +115,7 @@ plot(binCenter, deltas, 'ok');
 ylabel('\delta_{hs}');
 xlabel('wind speed (m/s)');
 
-figForPaper = figure('position', [100 100 350 300]);
+figForPaper = figure('position', [100 100 200 180]);
 marker_face_color = [0.8 0.8 0.8];
 plot(binCenter, deltas, 'ok', 'markerfacecolor', marker_face_color);
 hold on
