@@ -1,4 +1,6 @@
-DATASET_CHAR = 'D';
+% Select the dataset here: 'D', 'E' or 'F'
+DATASET_CHAR = 'F';
+
 DELTA = 5;
 BIN_WIDTH = 2;
 MIN_DATA_POINTS_IN_BIN = 20;
@@ -187,16 +189,17 @@ x = [0:0.1:max(binCenter)]';
 fitting_line_width = 2;
 marker_face_color = [0.8 0.8 0.8];
 
-fig = figure('position', [100 100 1100 300]);
+fig = figure('position', [100 100 950 270]);
+marginal_dist_string = ['from marginal distribution, ' DATASET_CHAR];
 subplot(1,3,1);
 plot(binCenter, medianOfHs, 'ok', 'markerfacecolor', marker_face_color);
 hold on
 plot(x, fMedian(x), '-b', 'linewidth', fitting_line_width)
-eq_string = ['' f3digits(fMedian.a)  ' + ' f3digits(fMedian.b) ' * x^{'  f3digits(fMedian.c) '}']
-legend({'from marginal distribution', eq_string})
+eq_string = ['' f3digits(fMedian.a)  ' + ' f3digits(fMedian.b) ' * x^{'  f3digits(fMedian.c) '}'];
+legend({marginal_dist_string, eq_string})
 legend box off
 xlabel('wind speed (m/s)');
-ylabel('h_{s50} (m)');
+ylabel('$\tilde{h}_{s}$ (m)', 'interpreter', 'latex');
 box off
 xlim([0 30])
 ylim([0 14])
@@ -204,11 +207,11 @@ ylim([0 14])
 
 
 subplot(1,3,2);
-plot(binCenter, betas, 'ok');
+plot(binCenter, betas, 'ok', 'markerfacecolor', marker_face_color);
 hold on
 plot(x, fBeta(x), '-b', 'linewidth', fitting_line_width);
 eq_string = ['' f3digits(fBeta.y0)  ' + ' f3digits(fBeta.L) ' / [1 + e^{-'  f3digits(fBeta.k) ' * (x - ' f3digits(fBeta.x0) ')}]'];
-legend({'from marginal distribution', eq_string}, 'fontsize', 8)
+legend({marginal_dist_string, eq_string}, 'fontsize', 8)
 legend box off
 xlabel('wind speed (m/s)');
 ylabel('\beta_{hs}');
@@ -217,18 +220,18 @@ xlim([0 30])
 ylim([0 3.5])
 
 subplot(1,3,3);
-plot(binCenter, alphas, 'ok');
+plot(binCenter, alphas, 'ok', 'markerfacecolor', marker_face_color);
 hold on
 plot(x, fAlpha(x), '-b', 'linewidth', fitting_line_width);
-eq_string = 'h_{s50} / 2.0445^{(1 / \beta_{hs})}'
-legend({'from marginal distribution', eq_string})
+eq_string = '$\tilde{h}_{s} / 2.0445^{(1 / \beta_{hs})}$';
+legend({marginal_dist_string, eq_string}, 'interpreter', 'latex')
 legend box off
 xlabel('wind speed (m/s)');
 ylabel('\alpha_{hs}');
 box off
 xlim([0 30])
 ylim([0 10])
-sgtitle(['Dataset ' DATASET_CHAR])
+%sgtitle(['Dataset ' DATASET_CHAR])
 
 
 
