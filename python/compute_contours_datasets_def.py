@@ -27,8 +27,9 @@ dist_description_hs = {'name': 'Weibull_Exp',
                        'min_datapoints_for_fit': 20}
 
 # Fit the model to the data.
-fit = Fit((sample_v, dist_description_v),
-          (dist_description_hs, dist_description_hs))
+fit = Fit((sample_v, sample_hs),
+          (dist_description_v, dist_description_hs))
+
 dist0 = fit.mul_var_dist.distributions[0]
 
 fig = plt.figure(figsize=(12.5, 3.5), dpi=150)
@@ -47,8 +48,8 @@ ts = 1 # Sea state duration in hours.
 limits = [(0, 45), (0, 20)] # Limits of the computational domain.
 deltas = [0.05, 0.05] # Dimensions of the grid cells.
 hdc_contour_1 = HDC(fit.mul_var_dist, return_period_1, ts, limits, deltas)
-return_period_20 = 50
-hdc_contour_20 = HDC(fit.mul_var_dist, return_period_20, ts, limits, deltas)
+return_period_50 = 50
+hdc_contour_20 = HDC(fit.mul_var_dist, return_period_50, ts, limits, deltas)
 
 c = sort_points_to_form_continous_line(hdc_contour_1.coordinates[0][0],
                                        hdc_contour_1.coordinates[0][1],
@@ -70,7 +71,7 @@ write_contour(contour_v_1,
               folder_name + file_name_1,
               label_x=label_v,
               label_y=label_hs)
-file_name_20 = determine_file_name_e1('Andreas', 'Haselsteiner', DATASET_CHAR, return_period_20)
+file_name_20 = determine_file_name_e1('Andreas', 'Haselsteiner', DATASET_CHAR, return_period_50)
 write_contour(contour_v_50,
               contour_hs_50,
               folder_name + file_name_20,
@@ -82,41 +83,41 @@ write_contour(contour_v_50,
 (contour_v_50, contour_hs_50) = read_contour(folder_name + file_name_20)
 
 # Find datapoints that exceed the 20-yr contour.
-hs_outside, tz_outside, hs_inside, tz_inside = \
+v_outside, hs_outside, v_inside, hs_inside = \
     points_outside(contour_v_50,
                    contour_hs_50,
                    np.asarray(sample_v),
                    np.asarray(sample_hs))
-print('Number of points outside the contour: ' +  str(len(hs_outside)))
+print('Number of points outside the contour: ' +  str(len(v_outside)))
 
 fig = plt.figure(figsize=(5, 5), dpi=150)
 ax = fig.add_subplot(111)
 
 # Plot the 1-year contour.
-plot_contour(x=contour_hs_1,
-             y=contour_v_1,
+plot_contour(x=contour_v_1,
+             y=contour_hs_1,
              ax=ax,
              contour_label=str(return_period_1) + '-yr contour',
              line_style='b--')
 
 # Plot the 20-year contour and the sample.
-plotted_sample = PlottedSample(x=np.asarray(sample_hs),
-                               y=np.asarray(sample_v),
+plotted_sample = PlottedSample(x=np.asarray(sample_v),
+                               y=np.asarray(sample_hs),
                                ax=ax,
-                               x_inside=tz_inside,
+                               x_inside=v_inside,
                                y_inside=hs_inside,
-                               x_outside=tz_outside,
+                               x_outside=v_outside,
                                y_outside=hs_outside,
-                               return_period=return_period_20)
-plot_contour(x=contour_hs_50,
-             y=contour_v_50,
+                               return_period=return_period_50)
+plot_contour(x=contour_v_50,
+             y=contour_hs_50,
              ax=ax,
-             contour_label=str(return_period_20) + '-yr contour',
-             x_label=label_hs,
-             y_label=label_v,
+             contour_label=str(return_period_50) + '-yr contour',
+             x_label=label_v,
+             y_label=label_hs,
              line_style='b-',
              plotted_sample=plotted_sample,
-             x_lim=(0, 19),
-             upper_ylim=15)
+             x_lim=(0, 35),
+             upper_ylim=20)
 plt.title('Dataset ' + DATASET_CHAR)
 plt.show()

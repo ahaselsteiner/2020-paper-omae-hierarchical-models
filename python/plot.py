@@ -1,8 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
-import math
-from viroconcom import distributions
 
 
 def plot_sample(plotted_sample, ax=None, do_plot_rasterized=True):
@@ -128,6 +126,8 @@ def plot_dependence_functions(
         dp_function = '$\ln(' + str('%.2f' % fit.mul_var_dist.distributions[1].scale.a) + \
                       '+' + str('%.2f' % fit.mul_var_dist.distributions[1].scale.b) + \
                       '\sqrt{h_s / g})$'
+    else:
+        dp_function = str(fit.mul_var_dist.distributions[1].scale)
 
     if fit.mul_var_dist.distributions[1].name == 'Lognormal':
         plt.plot(scale_at, np.log(fit.multiple_fit_inspection_data[1].scale_value),
@@ -191,9 +191,12 @@ def plot_dependence_functions(
     if fit.mul_var_dist.distributions[1].name == 'Weibull'  or \
                     fit.mul_var_dist.distributions[1].name == 'ExponentiatedWeibull':
         ylabel = '$β_{h_s}$'
-        dp_function = '$' + str('%.2f' % fit.mul_var_dist.distributions[1].shape.a) + \
-                      '+' + str('%.2f' % fit.mul_var_dist.distributions[1].shape.b) + \
-                      '\cdot h_s^{' + str('%.2f' % fit.mul_var_dist.distributions[1].shape.c) + '}$'
+        if fit.mul_var_dist.distributions[1].shape.func_name == 'power3':
+            dp_function = '$' + str('%.2f' % fit.mul_var_dist.distributions[1].shape.a) + \
+                          '+' + str('%.2f' % fit.mul_var_dist.distributions[1].shape.b) + \
+                          '\cdot h_s^{' + str('%.2f' % fit.mul_var_dist.distributions[1].shape.c) + '}$'
+        else:
+            dp_function = str(fit.mul_var_dist.distributions[1].shape)
     plt.legend(['from marginal distribution', dp_function], frameon=False)
     ax2.spines['right'].set_visible(False)
     ax2.spines['top'].set_visible(False)
