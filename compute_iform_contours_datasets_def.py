@@ -9,8 +9,9 @@ from read_write import read_dataset, determine_file_name_e1, write_contour, read
 
 # Read dataset D, E  or F.
 DATASET_CHAR = 'D'
-file_path = '../datasets/' + DATASET_CHAR + '.txt'
+file_path = 'datasets/' + DATASET_CHAR + '.txt'
 sample_v, sample_hs, label_v, label_hs = read_dataset(file_path)
+label_v = 'wind speed (m s$^{-1}$)'
 
 # Define the structure of the probabilistic model that will be fitted to the
 # dataset.
