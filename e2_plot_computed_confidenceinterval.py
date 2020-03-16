@@ -5,6 +5,8 @@ from plot import PlottedSample, plot_confidence_interval
 from read_write import read_dataset, determine_file_name_e2, read_contour
 
 NR_OF_YEARS_TO_DRAW = 1 # Must be 1, 5 or 25.
+FIRST_NAME = 'Andreas'
+LAST_NAME = 'Haselsteiner'
 
 # Read dataset D.
 file_path = 'datasets/D.txt'
@@ -13,11 +15,11 @@ dataset_d_v, dataset_d_hs, label_v, label_hs = read_dataset(file_path)
 # Read the contours that have beem computed previously from csv files.
 folder_name = 'contour-coordinates/'
 file_name_median = determine_file_name_e2(
-    'John', 'Doe', NR_OF_YEARS_TO_DRAW, 'median')
+    FIRST_NAME, LAST_NAME, NR_OF_YEARS_TO_DRAW, 'median')
 file_name_bottom = determine_file_name_e2(
-    'John', 'Doe', NR_OF_YEARS_TO_DRAW, 'bottom')
+    FIRST_NAME, LAST_NAME, NR_OF_YEARS_TO_DRAW, 'bottom')
 file_name_upper = determine_file_name_e2(
-    'John', 'Doe', NR_OF_YEARS_TO_DRAW, 'upper')
+    FIRST_NAME, LAST_NAME, NR_OF_YEARS_TO_DRAW, 'upper')
 (contour_v_median, contour_hs_median) = read_contour(
     folder_name + file_name_median)
 (contour_v_bottom, contour_hs_bottom) = read_contour(
