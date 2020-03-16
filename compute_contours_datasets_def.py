@@ -52,7 +52,7 @@ limits = [(0, 45), (0, 20)] # Limits of the computational domain.
 deltas = [0.05, 0.05] # Dimensions of the grid cells.
 hdc_contour_1 = HDC(fit.mul_var_dist, return_period_1, ts, limits, deltas)
 return_period_50 = 50
-hdc_contour_20 = HDC(fit.mul_var_dist, return_period_50, ts, limits, deltas)
+hdc_contour_50 = HDC(fit.mul_var_dist, return_period_50, ts, limits, deltas)
 
 c = sort_points_to_form_continous_line(hdc_contour_1.coordinates[0][0],
                                        hdc_contour_1.coordinates[0][1],
@@ -60,8 +60,8 @@ c = sort_points_to_form_continous_line(hdc_contour_1.coordinates[0][0],
 contour_v_1 = c[0]
 contour_hs_1 = c[1]
 
-c = sort_points_to_form_continous_line(hdc_contour_20.coordinates[0][0],
-                                       hdc_contour_20.coordinates[0][1],
+c = sort_points_to_form_continous_line(hdc_contour_50.coordinates[0][0],
+                                       hdc_contour_50.coordinates[0][1],
                                        do_search_for_optimal_start=True)
 contour_v_50 = c[0]
 contour_hs_50 = c[1]

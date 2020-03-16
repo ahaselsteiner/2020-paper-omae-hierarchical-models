@@ -424,8 +424,6 @@ def plot_confidence_interval(x_median, y_median, x_bottom, y_bottom, x_upper,
                  contour_label=contour_labels[2],
                  line_style='r--',
                  ax=ax)
-    plt.xlim((0, 32))
-    plt.ylim((0, 12))
 
 
 def plot_wave_breaking_limit(ax, bottom_tz=0, upper_tz=20, steps=100):
