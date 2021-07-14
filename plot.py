@@ -34,7 +34,7 @@ def plot_sample(plotted_sample, ax=None, do_plot_rasterized=True):
                           label=ps.label, rasterized=do_plot_rasterized)
         else:
             ax.scatter(x, y, s=40, alpha=0.5, c='k', marker='.',
-                       label='observation', rasterized=do_plot_rasterized)
+                       label='Observation', rasterized=do_plot_rasterized)
     x_extremes = np.empty((4,1,))
     x_extremes[:] = np.nan
     y_extremes = np.empty((4,1,))

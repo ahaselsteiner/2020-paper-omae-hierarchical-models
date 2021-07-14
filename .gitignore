@@ -1,6 +1,7 @@
 *.asv
 *.pyc
 *.xml
+*.png
 .idea/
 .DS_Store
 __pycache__

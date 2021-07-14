@@ -8,10 +8,11 @@ from contour_statistics import points_outside, sort_points_to_form_continous_lin
 from read_write import read_dataset, determine_file_name_e1, write_contour, read_contour
 
 # Read dataset D, E  or F.
-DATASET_CHAR = 'D'
+DATASET_CHAR = 'F'
 file_path = 'datasets/' + DATASET_CHAR + '.txt'
 sample_v, sample_hs, label_v, label_hs = read_dataset(file_path)
-label_v = 'wind speed (m s$^{-1}$)'
+label_v = 'Wind speed (m s$^{-1}$)'
+label_hs = 'Significant wave height (m)'
 
 # Define the structure of the probabilistic model that will be fitted to the
 # dataset.
@@ -45,63 +46,52 @@ plot_dependence_functions(fit=fit, fig=fig, ax1=ax2, ax2=ax3, unconditonal_varia
 fig.suptitle('Dataset ' + DATASET_CHAR)
 fig.subplots_adjust(wspace=0.25, bottom=0.15)
 
-# Compute highest density contours with return periods of 1 and 50 years.
-return_period_1 = 1
+# Compute highest density contours with return periods of 0.01, 1 and 50 years.
 ts = 1 # Sea state duration in hours.
 limits = [(0, 45), (0, 20)] # Limits of the computational domain.
 deltas = [0.05, 0.05] # Dimensions of the grid cells.
+
+return_period_lowest = 0.01
+hdc_contour_lowest = HDC(fit.mul_var_dist, return_period_lowest, ts, limits, deltas)
+return_period_1 = 1
 hdc_contour_1 = HDC(fit.mul_var_dist, return_period_1, ts, limits, deltas)
 return_period_50 = 50
 hdc_contour_50 = HDC(fit.mul_var_dist, return_period_50, ts, limits, deltas)
 
+c = sort_points_to_form_continous_line(hdc_contour_lowest.coordinates[0][0],
+                                       hdc_contour_lowest.coordinates[0][1],
+                                       do_search_for_optimal_start=True)
+contour_v_lowest = c[0]
+contour_hs_lowest = c[1]
+
+contour_v_1 = hdc_contour_1.coordinates[0][0]
+contour_hs_1 = hdc_contour_1.coordinates[0][1]
 c = sort_points_to_form_continous_line(hdc_contour_1.coordinates[0][0],
                                        hdc_contour_1.coordinates[0][1],
                                        do_search_for_optimal_start=True)
 contour_v_1 = c[0]
 contour_hs_1 = c[1]
 
+contour_v_50 = hdc_contour_50.coordinates[0][0]
+contour_hs_50 = hdc_contour_50.coordinates[0][1]
 c = sort_points_to_form_continous_line(hdc_contour_50.coordinates[0][0],
                                        hdc_contour_50.coordinates[0][1],
                                        do_search_for_optimal_start=True)
 contour_v_50 = c[0]
 contour_hs_50 = c[1]
 
-# Save the contours as csv files in the required format.
-folder_name = 'contour-coordinates/'
-file_name_1 = determine_file_name_e1('Andreas', 'Haselsteiner', DATASET_CHAR, return_period_1)
-write_contour(contour_v_1,
-              contour_hs_1,
-              folder_name + file_name_1,
-              label_x=label_v,
-              label_y=label_hs)
-file_name_20 = determine_file_name_e1('Andreas', 'Haselsteiner', DATASET_CHAR, return_period_50)
-write_contour(contour_v_50,
-              contour_hs_50,
-              folder_name + file_name_20,
-              label_x=label_v,
-              label_y=label_hs)
-
-# Read the contours from the csv files.
-(contour_v_1, contour_hs_1) = read_contour(folder_name + file_name_1)
-(contour_v_50, contour_hs_50) = read_contour(folder_name + file_name_20)
-
-# Find datapoints that exceed the 20-yr contour.
-v_outside, hs_outside, v_inside, hs_inside = \
-    points_outside(contour_v_50,
-                   contour_hs_50,
-                   np.asarray(sample_v),
-                   np.asarray(sample_hs))
-print('Number of points outside the contour: ' +  str(len(v_outside)))
-
 fig = plt.figure(figsize=(5, 5), dpi=150)
 ax = fig.add_subplot(111)
 
-# Plot the 1-year contour.
+# Plot the two lower contours.
+plot_contour(x=contour_v_lowest,
+             y=contour_hs_lowest,
+             ax=ax,
+             line_style='r-')
 plot_contour(x=contour_v_1,
              y=contour_hs_1,
              ax=ax,
-             contour_label=str(return_period_1) + '-yr contour',
-             line_style='b--')
+             line_style='r-')
 
 # Compute the median hs conditonal on v.
 x = np.linspace(0, 35, 100)
@@ -114,25 +104,21 @@ y = a + b * np.power(x, c)
 # Plot the 50-year contour and the sample.
 plotted_sample = PlottedSample(x=np.asarray(sample_v),
                                y=np.asarray(sample_hs),
-                               ax=ax,
-                               x_inside=v_inside,
-                               y_inside=hs_inside,
-                               x_outside=v_outside,
-                               y_outside=hs_outside,
-                               return_period=return_period_50)
+                               ax=ax)
 plot_contour(x=contour_v_50,
              y=contour_hs_50,
              ax=ax,
-             contour_label=str(return_period_50) + '-yr contour',
+             contour_label='Constant density',
              x_label=label_v,
              y_label=label_hs,
-             line_style='b-',
+             line_style='r-',
              plotted_sample=plotted_sample,
              x_lim=(0, 35),
              upper_ylim=20,
              median_x=x,
              median_y=y,
-             median_label='median of $H_s | V$')
+             median_label='Median of $H_s | V$',
+             median_style='b--')
 
 plt.title('Dataset ' + DATASET_CHAR)
 plt.show()

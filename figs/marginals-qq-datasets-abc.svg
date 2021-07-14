@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="504px" height="360px" viewBox="0 0 504 360" enable-background="new 0 0 504 360" xml:space="preserve">
+<path fill="#FFFFFF" d="M0,360h504V0H0V360z"/>
+<g>
+	<path id="md3e5ca0e55" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M34.534,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 32.866 174.3955)" font-family="'ArialMT'" font-size="6">0</text>
+<g>
+	<path id="md3e5ca0e55_1_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M56.511,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 54.8425 174.3955)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="md3e5ca0e55_2_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M78.488,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 76.8191 174.3955)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="md3e5ca0e55_3_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M100.464,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 98.7952 174.3955)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="md3e5ca0e55_4_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M122.441,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 120.7717 174.3955)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="md3e5ca0e55_5_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M144.417,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 141.0798 174.3955)" font-family="'ArialMT'" font-size="6">10</text>
+<g>
+	<path id="md3e5ca0e55_6_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M166.394,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 163.0564 174.3955)" font-family="'ArialMT'" font-size="6">12</text>
+<text transform="matrix(1 0 0 1 35.2126 183.9561)" font-family="'ArialMT'" font-size="6">Theoretical quantiles of significant wave height (m)</text>
+<g>
+	<path id="m985124d4a5" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,157.157h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 159.3047)" font-family="'ArialMT'" font-size="6">0</text>
+<g>
+	<path id="m985124d4a5_1_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,135.683h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 137.8301)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="m985124d4a5_2_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,114.208h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 116.3555)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="m985124d4a5_3_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,92.733h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 94.8809)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="m985124d4a5_4_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,71.259h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 73.4063)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="m985124d4a5_5_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,49.784h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 15.1345 51.9316)" font-family="'ArialMT'" font-size="6">10</text>
+<g>
+	<path id="m985124d4a5_6_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,28.31h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 15.1345 30.457)" font-family="'ArialMT'" font-size="6">12</text>
+<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 9.8723 151.2256)" font-family="'ArialMT'" font-size="6">Ordered values of significant wave height (m)</text>
+<image overflow="visible" enable-background="new    " width="575" height="329" id="image662b6e0b42" xlink:href="E7711128.png"  transform="matrix(0.24 0 0 -0.24 33.5999 157.9199)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="28.809" y="18.96" width="147.542" height="144.141"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#004488" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" d="
+		M35.515,156.164l134.13-130.652l0,0"/>
+</g>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M28.809,163.101V18.96"/>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M28.809,163.101h147.542"/>
+<text transform="matrix(1 0 0 1 86.7395 11.9756)" font-family="'ArialMT'" font-size="7.2">D</text>
+<text transform="matrix(1 0 0 1 91.9753 11.9756)" font-family="'ArialMT'" font-size="7.2">a</text>
+<text transform="matrix(1 0 0 1 96.0076 11.9756)" font-family="'ArialMT'" font-size="7.2">t</text>
+<text transform="matrix(1 0 0 1 98.0217 11.9756)" font-family="'ArialMT'" font-size="7.2">a</text>
+<text transform="matrix(1 0 0 1 102.054 11.9756)" font-family="'ArialMT'" font-size="7.2">s</text>
+<text transform="matrix(1 0 0 1 105.679 11.9756)" font-family="'ArialMT'" font-size="7.2">e</text>
+<text transform="matrix(1 0 0 1 109.7107 11.9756)" font-family="'ArialMT'" font-size="7.2">t</text>
+<text transform="matrix(1 0 0 1 111.7253 11.9756)" font-family="'ArialMT'" font-size="7.2"> </text>
+<text transform="matrix(1 0 0 1 113.7253 11.9756)" font-family="'ArialMT'" font-size="12"> </text>
+<text transform="matrix(1 0 0 1 113.7395 11.9756)" font-family="'Arial-ItalicMT'" font-size="7.2">A</text>
+<g>
+	<path id="md3e5ca0e55_7_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M194.088,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 192.4192 174.3955)" font-family="'ArialMT'" font-size="6">0</text>
+<g>
+	<path id="md3e5ca0e55_8_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M220.538,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 218.8699 174.3955)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="md3e5ca0e55_9_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M246.99,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 245.321 174.3955)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="md3e5ca0e55_10_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M273.441,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 271.7717 174.3955)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="md3e5ca0e55_11_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M299.892,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 298.2229 174.3955)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="md3e5ca0e55_12_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M326.343,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 323.0061 174.3955)" font-family="'ArialMT'" font-size="6">10</text>
+<text transform="matrix(1 0 0 1 195.1545 183.9561)" font-family="'ArialMT'" font-size="6">Theoretical quantiles of significant wave height (m)</text>
+<g>
+	<path id="m985124d4a5_7_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,157.157h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_8_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,135.683h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_9_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,114.208h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_10_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,92.733h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_11_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,71.259h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_12_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,49.784h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_13_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,28.31h-3.5"/>
+</g>
+<image overflow="visible" enable-background="new    " width="575" height="446" id="imagebad62ed955" xlink:href="E7711129.png"  transform="matrix(0.24 0 0 -0.24 193.4397 156.96)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="188.75" y="18.96" width="147.542" height="144.141"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_4_)" fill="none" stroke="#004488" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" d="
+		M195.457,155.757L329.586,49.606l0,0"/>
+</g>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M188.75,163.101V18.96"/>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M188.75,163.101h147.542"/>
+<text transform="matrix(1 0 0 1 246.6814 11.9756)" font-family="'ArialMT'" font-size="7.2">D</text>
+<text transform="matrix(1 0 0 1 251.9172 11.9756)" font-family="'ArialMT'" font-size="7.2">a</text>
+<text transform="matrix(1 0 0 1 255.9495 11.9756)" font-family="'ArialMT'" font-size="7.2">t</text>
+<text transform="matrix(1 0 0 1 257.9631 11.9756)" font-family="'ArialMT'" font-size="7.2">a</text>
+<text transform="matrix(1 0 0 1 261.9963 11.9756)" font-family="'ArialMT'" font-size="7.2">s</text>
+<text transform="matrix(1 0 0 1 265.6213 11.9756)" font-family="'ArialMT'" font-size="7.2">e</text>
+<text transform="matrix(1 0 0 1 269.6526 11.9756)" font-family="'ArialMT'" font-size="7.2">t</text>
+<text transform="matrix(1 0 0 1 271.6672 11.9756)" font-family="'ArialMT'" font-size="7.2"> </text>
+<text transform="matrix(1 0 0 1 273.6672 11.9756)" font-family="'ArialMT'" font-size="12"> </text>
+<text transform="matrix(1 0 0 1 273.6819 11.9756)" font-family="'Arial-ItalicMT'" font-size="7.2">B</text>
+<g>
+	<path id="md3e5ca0e55_13_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M354.998,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 353.3293 174.3955)" font-family="'ArialMT'" font-size="6">0</text>
+<g>
+	<path id="md3e5ca0e55_14_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M381.853,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 380.1838 174.3955)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="md3e5ca0e55_15_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M408.707,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 407.0383 174.3955)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="md3e5ca0e55_16_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M435.562,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 433.8928 174.3955)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="md3e5ca0e55_17_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M462.416,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 460.7473 174.3955)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="md3e5ca0e55_18_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M489.271,163.101v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 485.9338 174.3955)" font-family="'ArialMT'" font-size="6">10</text>
+<text transform="matrix(1 0 0 1 355.0969 183.9561)" font-family="'ArialMT'" font-size="6">Theoretical quantiles of significant wave height (m)</text>
+<g>
+	<path id="m985124d4a5_14_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,157.157h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_15_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,135.683h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_16_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,114.208h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_17_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,92.733h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_18_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,71.259h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_19_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,49.784h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_20_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,28.31h-3.5"/>
+</g>
+<image overflow="visible" enable-background="new    " width="575" height="516" id="image18522fc4e7" xlink:href="E771112E.png"  transform="matrix(0.24 0 0 -0.24 353.5188 158.4004)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_5_" x="348.693" y="18.96" width="147.542" height="144.141"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_6_)" fill="none" stroke="#004488" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" d="
+		M355.399,156.517l134.129-104.18l0,0"/>
+</g>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M348.693,163.101V18.96"/>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M348.693,163.101h147.542"/>
+<text transform="matrix(1 0 0 1 406.4436 12.0537)" font-family="'ArialMT'" font-size="7.2">D</text>
+<text transform="matrix(1 0 0 1 411.679 12.0537)" font-family="'ArialMT'" font-size="7.2">a</text>
+<text transform="matrix(1 0 0 1 415.7112 12.0537)" font-family="'ArialMT'" font-size="7.2">t</text>
+<text transform="matrix(1 0 0 1 417.7249 12.0537)" font-family="'ArialMT'" font-size="7.2">a</text>
+<text transform="matrix(1 0 0 1 421.7581 12.0537)" font-family="'ArialMT'" font-size="7.2">s</text>
+<text transform="matrix(1 0 0 1 425.3831 12.0537)" font-family="'ArialMT'" font-size="7.2">e</text>
+<text transform="matrix(1 0 0 1 429.4143 12.0537)" font-family="'ArialMT'" font-size="7.2">t</text>
+<text transform="matrix(1 0 0 1 431.429 12.0537)" font-family="'ArialMT'" font-size="7.2"> </text>
+<text transform="matrix(1 0 0 1 433.4299 12.0537)" font-family="'ArialMT'" font-size="12"> </text>
+<text transform="matrix(1 0 0 1 433.4436 12.0537)" font-family="'Arial-ItalicMT'" font-size="7.2">C</text>
+<g>
+	<path id="md3e5ca0e55_19_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M40.279,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 38.6101 344.916)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="md3e5ca0e55_20_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M59.781,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 58.113 344.916)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="md3e5ca0e55_21_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M79.285,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 77.6165 344.916)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="md3e5ca0e55_22_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M98.788,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 97.1194 344.916)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="md3e5ca0e55_23_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M118.291,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 114.9543 344.916)" font-family="'ArialMT'" font-size="6">10</text>
+<g>
+	<path id="md3e5ca0e55_24_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M137.794,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 134.4573 344.916)" font-family="'ArialMT'" font-size="6">12</text>
+<g>
+	<path id="md3e5ca0e55_25_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M157.298,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 153.9607 344.916)" font-family="'ArialMT'" font-size="6">14</text>
+<text transform="matrix(1 0 0 1 34.8816 354.4766)" font-family="'ArialMT'" font-size="6">Theoretical quantiles of zero-up-crossing period (s)</text>
+<g>
+	<path id="m985124d4a5_21_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,321.069h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 323.2168)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="m985124d4a5_22_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,301.992h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 304.1406)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="m985124d4a5_23_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,282.916h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 285.0635)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="m985124d4a5_24_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,263.84h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 18.4714 265.9873)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="m985124d4a5_25_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,244.764h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 15.1345 246.9102)" font-family="'ArialMT'" font-size="6">10</text>
+<g>
+	<path id="m985124d4a5_26_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,225.687h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 15.1345 227.834)" font-family="'ArialMT'" font-size="6">12</text>
+<g>
+	<path id="m985124d4a5_27_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M28.809,206.61h-3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 15.1345 208.7578)" font-family="'ArialMT'" font-size="6">14</text>
+<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 9.8723 322.0771)" font-family="'ArialMT'" font-size="6">Ordered values of zero-up-crossing period (s)</text>
+<image overflow="visible" enable-background="new    " width="575" height="446" id="image530f097c47" xlink:href="E7711133.png"  transform="matrix(0.24 0 0 -0.24 33.5999 319.9199)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_7_" x="28.809" y="189.48" width="147.542" height="144.141"/>
+	</defs>
+	<clipPath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_8_)" fill="none" stroke="#004488" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" d="
+		M35.515,327.069l134.13-131.038l0,0"/>
+</g>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M28.809,333.621V189.48"/>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M28.809,333.621h147.542"/>
+<g>
+	<path id="md3e5ca0e55_26_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M195.74,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 194.0706 344.916)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="md3e5ca0e55_27_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M222.862,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 221.1926 344.916)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="md3e5ca0e55_28_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M249.984,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 248.3147 344.916)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="md3e5ca0e55_29_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M277.105,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 275.4358 344.916)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="md3e5ca0e55_30_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M304.227,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 300.8899 344.916)" font-family="'ArialMT'" font-size="6">10</text>
+<g>
+	<path id="md3e5ca0e55_31_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M331.349,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 328.012 344.916)" font-family="'ArialMT'" font-size="6">12</text>
+<text transform="matrix(1 0 0 1 194.8235 354.4766)" font-family="'ArialMT'" font-size="6">Theoretical quantiles of zero-up-crossing period (s)</text>
+<g>
+	<path id="m985124d4a5_28_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,321.069h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_29_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,301.992h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_30_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,282.916h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_31_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,263.84h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_32_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,244.764h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_33_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,225.687h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_34_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M188.75,206.61h-3.5"/>
+</g>
+<image overflow="visible" enable-background="new    " width="575" height="502" id="imageff6077af41" xlink:href="E7711134.png"  transform="matrix(0.24 0 0 -0.24 193.4397 317.041)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_9_" x="188.75" y="189.48" width="147.542" height="144.141"/>
+	</defs>
+	<clipPath id="SVGID_10_">
+		<use xlink:href="#SVGID_9_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_10_)" fill="none" stroke="#004488" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" d="
+		M195.457,323.153l134.129-94.839l0,0"/>
+</g>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M188.75,333.621V189.48"/>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M188.75,333.621h147.542"/>
+<g>
+	<path id="md3e5ca0e55_32_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M353.664,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 351.9954 344.916)" font-family="'ArialMT'" font-size="6">2</text>
+<g>
+	<path id="md3e5ca0e55_33_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M388.651,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 386.9817 344.916)" font-family="'ArialMT'" font-size="6">4</text>
+<g>
+	<path id="md3e5ca0e55_34_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M423.636,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 421.968 344.916)" font-family="'ArialMT'" font-size="6">6</text>
+<g>
+	<path id="md3e5ca0e55_35_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M458.622,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 456.9534 344.916)" font-family="'ArialMT'" font-size="6">8</text>
+<g>
+	<path id="md3e5ca0e55_36_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M493.609,333.621v3.5"/>
+</g>
+<text transform="matrix(1 0 0 1 490.2717 344.916)" font-family="'ArialMT'" font-size="6">10</text>
+<text transform="matrix(1 0 0 1 354.7659 354.4766)" font-family="'ArialMT'" font-size="6">Theoretical quantiles of zero-up-crossing period (s)</text>
+<g>
+	<path id="m985124d4a5_35_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,321.069h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_36_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,301.992h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_37_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,282.916h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_38_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,263.84h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_39_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,244.764h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_40_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,225.687h-3.5"/>
+</g>
+<g>
+	<path id="m985124d4a5_41_" stroke="#000000" stroke-width="0.8" stroke-linejoin="round" d="M348.693,206.61h-3.5"/>
+</g>
+<image overflow="visible" enable-background="new    " width="575" height="346" id="imagea4de5f7ad0" xlink:href="E7711135.png"  transform="matrix(0.24 0 0 -0.24 353.5188 318.2402)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_11_" x="348.693" y="189.48" width="147.542" height="144.141"/>
+	</defs>
+	<clipPath id="SVGID_12_">
+		<use xlink:href="#SVGID_11_"  overflow="visible"/>
+	</clipPath>
+	
+		<path clip-path="url(#SVGID_12_)" fill="none" stroke="#004488" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" d="
+		M355.399,319.499l134.129-67.739l0,0"/>
+</g>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M348.693,333.621V189.48"/>
+<path fill="none" stroke="#000000" stroke-width="0.8" stroke-linecap="square" d="M348.693,333.621h147.542"/>
+</svg>
