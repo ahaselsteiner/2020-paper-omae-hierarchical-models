@@ -1,5 +1,4 @@
-# Repo for chapter 'Joint distribution of wave height, wave
-period, and wind speed'
+# Repo for chapter 'Joint distribution of wave height, wave period, and wind speed'
 
 This is the repository for the Chapter "Joint distribution of wave height, wave
 period, and wind speed" in the doctoral thesis of Andreas Haselsteiner. https://doi.org/10.26092/elib/1615
