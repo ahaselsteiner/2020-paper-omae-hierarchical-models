@@ -1,13 +1,15 @@
-# Repo for 'Global hierarchical models for wind and wave contours'
+# Repo for chapter 'Joint distribution of wave height, wave
+period, and wind speed'
 
 This is the repository for the Chapter "Joint distribution of wave height, wave
-period and wind speed" in the PhD thesis of Andreas Haselsteiner, which is based 
-on the paper paper 'Global hierarchical models for wind and
+period, and wind speed" in the doctoral thesis of Andreas Haselsteiner. https://doi.org/10.26092/elib/1615
+
+The chapter is based on the paper paper 'Global hierarchical models for wind and
 wave contours: Physical interpretations of the dependence functions' by A. F.
-Haselsteiner, A. Sander, J.-H. Ohlendorf and K.-D. Thoben.
+Haselsteiner, A. Sander, J.-H. Ohlendorf and K.-D. Thoben. https://doi.org/10.1115/OMAE2020-18668
 
 The results presented in this paper were also submitted to the benchmarking
-exercise on estimating extreme environmental conditions (see DOI: 10.1115/OMAE2019-96523).
+exercise on estimating extreme environmental conditions (https://doi.org/10.1016/j.oceaneng.2021.109504).
 
 To reproduce the results from the OMAE 2020 paper you can navigate to the commit from March 25, 2020:
 https://github.com/ahaselsteiner/2020-paper-omae-hierarchical-models/commit/e5781fcec447fbdd30f1248f6d834342326bb9ae
